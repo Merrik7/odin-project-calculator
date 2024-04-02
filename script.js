@@ -1,3 +1,5 @@
+const calculatorBtns = document.querySelectorAll("calculator-btn");
+
 const add = function (a, b) {
   return a + b;
 };
@@ -27,3 +29,5 @@ const operate = function (operator, a, b) {
     return `error`;
   }
 };
+
+for (let i = 0; i < calculatorBtns.length; i++) {}

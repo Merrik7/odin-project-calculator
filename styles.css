@@ -53,12 +53,14 @@ nav .link:last-child {
   align-items: center;
 }
 
-.calculator-input {
+.calculator-text {
   width: 300px;
   height: 5vh;
   border: 2px solid black;
   border-radius: 25px;
   text-align: center;
+  background-color: #f9f9f9;
+  font-family: "Roboto", sans-serif;
 }
 
 .number-pad {
@@ -71,8 +73,17 @@ nav .link:last-child {
   grid-template-rows: repeat(4, 1fr);
 }
 
+.calculator-btn {
+  cursor: pointer;
+}
+
 .calculator-btn:active {
   background-color: red;
+}
+
+.num-0 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
 }
 
 .border-top-left {
