@@ -10,7 +10,7 @@ const operate = function (calculation) {
   for (let i = 0; i < numbersToCalc.length - 1; i++) {
     if (Number(numbersToCalc[i])) {
       if (numbersToCalc[i + 1] === '+') {
-        total += total + Number(numbersToCalc[i + 2]);
+        total += Number(numbersToCalc[i + 2]);
       } else if (numbersToCalc[i + 1] === '-') {
         total -= Number(numbersToCalc[i + 2]);
       } else if (numbersToCalc[i + 1] === '*') {
@@ -34,7 +34,7 @@ for (let i = 0; i < calculatorBtns.length; i++) {
     let subbedString = calculatorBtns[i].classList[1].replace('num-', '');
     let operator = '';
 
-    if (Number(subbedString)) {
+    if (Number(subbedString) || subbedString == '0') {
       console.log(nextNum);
       calculation += subbedString;
       calculatorText.textContent = calculation;
